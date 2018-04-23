@@ -7,14 +7,14 @@ const PORT = process.env.PORT || 3001;
 const app = express();
 
 // Serve up static assets (usually on heroku)
-// if (process.env.NODE_ENV === "production") {
-//   app.use(express.static("client/build"));
-// }
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+}
 
 var databaseUri = 'mongodb://localhost/reactarticlelist';
 
 if (process.env.MONGODB_URI) {
-  mongoose.connect(process.env.MONGODB_URI_;)
+  mongoose.connect(process.env.MONGODB_URI_);
 } else {
   mongoose.connect(databaseUri);
 }
