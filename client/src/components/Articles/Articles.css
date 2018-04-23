@@ -1,0 +1,35 @@
+.articles-overflow-container {
+  max-height: 545px;
+  border: 1px #DDDDDD solid;
+  border-radius: 4px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 10px 20px 10px 0px;
+}
+
+.articles-overflow-container ul {
+  margin: 0;
+  list-style-type: none;
+}
+
+.articles-overflow-container li {
+  border-radius: 0px;
+  border-left: none;
+  border-right: none;
+}
+
+.articles-overflow-container li * {
+  cursor: pointer;
+}
+
+.articles-overflow-container li a {
+  color: #2A878C;
+}
+
+.articles-overflow-container li:first-child {
+  border-top: none;
+}
+
+.articles-overflow-container li:last-child {
+  border-bottom: none;
+}
