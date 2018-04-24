@@ -8,7 +8,6 @@ router.route("/")
 
 // Matches with "/api/article/:id"
 router.route("/:id")
-  .get(articleController.findById)
+  // .get(articleController.findById)
   .delete(articleController.remove);
-
 module.exports = router;
